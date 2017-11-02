@@ -1,0 +1,77 @@
+// variables ----------------------------------/
+$font-stack-primary: 'Aldrich', Courier New;
+$font-stack-all: 'Allerta Stencil', Times New Roman;
+$font-stack-secondary: 'Titan One';
+
+// helpers -------------------------------------/
+%background-fix {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %background-fix;
+  font-family: $font-stack-primary;
+  text-align: center;
+  background-color: #1565c0;
+  color: #303030;
+  background-image: url("https://cff2.earth.com/uploads/2016/09/26141929/global-warming-climate-change-tree_1big_stock2.jpg");
+
+}
+
+.container {
+  background-color: #fff;
+  opacity: 0.7;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-family: $font-stack-secondary;
+  display: inline-block;
+  font-size: 2.5em;
+  margin: 0 0 5px;
+  font-weight: normal;
+  &:active {
+    color: #303030;
+  }
+}
+
+section {
+  font-family: $font-stack-all;
+}
+
+div {
+  h1 {
+    margin-top: 0;
+    margin-bottom: 12.5px;
+    font-size: 2.5em;
+    display: inline-block;
+  }
+  h1:hover, h2:hover {
+    color: #f7e214;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px #f4ed47;
+  }
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+img {
+  position: absolute;
+  height: 40px;
+  bottom: 5px;
+  right: 5px;
+}
